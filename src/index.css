@@ -33,5 +33,8 @@
 @layer utilities {
   .active {
     @apply text-red-hot
+  }  
+  .active::before {
+    @apply bg-red-hot
   }
 }

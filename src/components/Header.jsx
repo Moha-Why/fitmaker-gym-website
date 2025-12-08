@@ -20,7 +20,7 @@ const Header = () => {
         <nav className='hidden lg:block'>
             <ul className='flex flex-row-reverse justify-between text-xl gap-10 font-light '>
                 {navData.map((e, index) => {
-                  return <li key={index} className='hover:text-red-hot transition duration-300 underline'><NavLink to={e.url}>{e.text}</NavLink></li>
+                  return <li key={index} className='hover:text-red-hot transition duration-300 relative'><NavLink className="before:w-full before:h-0.5 before:bg-gray-100 before:absolute before:-bottom-1 before:transition-all before:duration-300 before:block hover:before:w-1/2 hover:before:bg-red-hot" to={e.url}>{e.text}</NavLink></li>
                 })}
             </ul>
         </nav>
