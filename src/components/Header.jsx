@@ -26,11 +26,11 @@ const Header = () => {
         </nav>
         <nav className='lg:hidden relative'>
             <button onClick={() => {setOpen((prev => !prev))}}><FontAwesomeIcon icon="fa-solid fa-bars" size='xl'className='transition' rotation={open ? 90 : 0}/></button>
-            {open ? <ul className='absolute flex flex-col top-8 bg-white transition duration-300 text-xl z-20 text-dark w-52 font-semibold'>
+            <ul className={`absolute flex flex-col top-8 bg-dark transition-all duration-300 text-xl z-20 text-gray-100 w-52 ${open ? " opacity-100 pointer-events-auto translate-y-0" : " opacity-0 pointer-events-none -translate-y-2"} font-semibold`}>
                 {navData.map((e, index) => {
-                  return <NavLink to={e.url}><li key={index} onClick={() => {setOpen((prev => !prev))}} className='p-3 border-2 w-full text-center border-gray-200 hover:text-red-hot transition duration-300'>{e.text}</li></NavLink>
+                  return <NavLink to={e.url}><li key={index} onClick={() => {setOpen((prev => !prev))}} className={`p-3 border-2 w-full text-center border-gray-900 hover:text-red-hot transition-all duration-300`}>{e.text}</li></NavLink>
                 })}
-            </ul>: null}
+            </ul>
         </nav>
     </header>
   )

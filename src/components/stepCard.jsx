@@ -4,7 +4,7 @@ const stepCard = ({data, count}) => {
   return (
     <>
         <div className="card flex bg-white rounded-2xl p-5 relative shadow-[0px_0px_4px_0] shadow-black/25 flex-wrap sm:flex-nowrap group justify-evenly items-center mt-8 lg:h-[55vh]">
-            <div className="counter self-baseline w-fit h-fit absolute top-2.5 left-2.5 lg:top-0 lg:left-0 lg:relative lg:h-full sm:translate-0 ">
+            <div className="counter self-baseline w-fit h-fit absolute top-4 left-4 lg:top-0 lg:left-0 lg:relative lg:h-full sm:translate-0 ">
                 <div className="number w-8 h-8 lg:relative lg:h-full rounded-lg bg-red-hot transition duration-300 group-hover:bg-gray-600 group-focus:bg-gray-600 text-gray-100 text-xl font-bold flex items-center justify-center">{count}</div>
             </div>
             <div className="stepContext w-full sm:w-2/6 flex flex-col gap-5 px-2">
